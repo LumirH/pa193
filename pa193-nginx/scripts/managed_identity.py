@@ -3,7 +3,7 @@ from azure.keyvault.secrets import SecretClient
 
 credential = DefaultAzureCredential()
 
-vault_url = "https://pa193-keyvault.vault.azure.net/"
+vault_url = "https://pa193-keyvault-YOUR_NAME.vault.azure.net/"
 client = SecretClient(vault_url=vault_url, credential=credential)
 
 secrets = client.list_properties_of_secrets()
